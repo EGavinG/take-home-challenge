@@ -1,21 +1,24 @@
-import './Article.css'
+import './Article.css';
 
-const Article = () => {
+const Article = ({ article }) => {
+  const { title, urlToImage, description, publishedAt } = article;
 
-
-    return (
+  return (
     <div className='Article'>
-          <article>
-            <h2>Article Headline</h2>
-        <figure>
-            <img src="" alt="Description of the image" />
-            <figcaption>Caption for the image</figcaption>
-        </figure>
-            <p>Description of the article content.</p>
-            <time datetime="2024-03-12">March 12, 2024</time>
-            </article>
+      <article>
+        <h3>{title}</h3>
+          <img src={urlToImage} alt={description} />
+        <p>{description}</p>
+        <time dateTime={publishedAt}>
+          {new Date(publishedAt).toLocaleDateString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+          })}
+        </time>
+      </article>
     </div>
-    )
-}
+  );
+};
 
-export default Article
+export default Article;
