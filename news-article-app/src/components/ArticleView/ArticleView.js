@@ -1,11 +1,19 @@
 import "./ArticleView.css";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ArticleView = ({ articles }) => {
   const { id } = useParams();
+  const [article, setArticle] = useState(null);
 
-  const articleIndex = articles.findIndex(article => article.id === id);
-  const article = articles[articleIndex];
+  useEffect(() => {
+    if (id && articles.length > 0) {
+      const articleIndex = parseInt(id); // Parse id as an integer
+      if (articleIndex >= 0 && articleIndex < articles.length) {
+        setArticle(articles[articleIndex]);
+      }
+    }
+  }, [id, articles]);
 
   return (
     <>
@@ -31,5 +39,4 @@ const ArticleView = ({ articles }) => {
   );
 }
 
-
-export default ArticleView
+export default ArticleView;
