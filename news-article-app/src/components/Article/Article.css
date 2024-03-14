@@ -18,6 +18,8 @@
   .Article time {
     margin: 10px;
     padding: 0;
+    text-decoration: none; 
+    color: inherit;
   }
   
   .Article img {
@@ -25,8 +27,4 @@
     height: auto; 
   }
   
-  .Article figcaption {
-    margin-top: 5px;
-    font-style: italic;
-  }
   

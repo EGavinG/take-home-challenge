@@ -34,6 +34,8 @@
   
   .article-details p {
     margin: 10px 0;
+    text-decoration: none; 
+    color: inherit;
   }
   
   .article-details a {
