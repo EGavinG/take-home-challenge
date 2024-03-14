@@ -17,6 +17,9 @@ Giving the user the ability to use this application to browse/search/view/intera
 ## Contributors
 [Gavin Garcia](https://github.com/EGavinG/)
 
+## Project Board
+[Here](https://github.com/users/EGavinG/projects/8/views/1)
+
 ## Wins/Challenges
 - Challenge - Time contraint being 8 hours to flesh out an application that meets the mvp of the challenge.
 - Win - Getting each MVP done to meet the challenges requirments
