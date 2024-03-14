@@ -1,0 +1,12 @@
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
