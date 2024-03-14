@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const ArticleList = ({ articles }) => {
-  const sortedArticles = articles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   const responsive = {
     desktop: {
@@ -25,7 +24,6 @@ const ArticleList = ({ articles }) => {
 
   return (
     <main>
-      <h1>The Daily GET</h1>
       <Carousel
         className='carousel'
         swipeable={true}
@@ -43,8 +41,8 @@ const ArticleList = ({ articles }) => {
         dotListClass='custom-dot-list-style'
         itemClass='carousel-item-padding-40-px'
       >
-        {sortedArticles.map((article, index) => (
-          <Article key={index} article={article} />
+        {articles.map((article) => (
+          <Article key={article.id} article={article} />
         ))}
       </Carousel>
     </main>
