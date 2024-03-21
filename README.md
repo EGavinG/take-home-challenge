@@ -2,6 +2,7 @@
 
 ## Set Up Instructions:
 - Git clone down this repo in terminal
+- `git clone git@github.com:EGavinG/take-home-challenge.git`
 - `cd take-home-challenge`
 - `cd news-article-app`
 - Run `npm install`
@@ -28,3 +29,4 @@ Giving the user the ability to use this application to browse/search/view/intera
 - More robust styling 
 - Ability to give the user a sort feature for articles by date
 - Cypress testing for the application 
+
