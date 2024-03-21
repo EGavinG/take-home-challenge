@@ -57,7 +57,7 @@ const ArticleList = () => {
   const isMobile = window.innerWidth <= 464;
 
   if (error) {
-    return <p>Error fetching articles.</p>;
+    return <p>"Error: No results found for your search query. Please try again with different keywords or refine your search criteria."</p>;
   }
 
   return (
