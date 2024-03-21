@@ -30,3 +30,5 @@ Giving the user the ability to use this application to browse/search/view/intera
 - Ability to give the user a sort feature for articles by date
 - Cypress testing for the application 
 
+## Screenshot of Application
+<img width="1440" alt="Screenshot 2024-03-21 at 2 38 20 AM" src="https://github.com/EGavinG/take-home-challenge/assets/68877187/3b0f6c05-e6ef-4ed0-8e7b-3450f8daf79d">
