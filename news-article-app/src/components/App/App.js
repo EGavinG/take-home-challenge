@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const data = await getFetch(); // Fetch articles from API
+        const data = await getFetch(); 
         setArticles(data.articles);
       } catch (error) {
         console.error("Error fetching articles:", error);
@@ -31,11 +31,11 @@ function App() {
         <Routes>
           <Route
             path="/article/:id"
-            element={<ArticleView articles={articles} />} // Pass fetched articles directly
+            element={<ArticleView articles={articles} />} 
           />
           <Route
             path="/"
-            element={<ArticleList articles={articles} />} // Pass fetched articles directly
+            element={<ArticleList articles={articles} />} 
           />
         </Routes>
       </Router>
